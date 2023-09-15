@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dynoonigni006"]
+
+[ext_resource type="Script" path="res://gui/heartGui.gd" id="1_jf0ek"]
+[ext_resource type="Texture2D" uid="uid://c7fjsehcg4sy6" path="res://art/Heart.png" id="1_xyru4"]
+
+[node name="heartGui" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(16, 13)
+offset_right = 16.0
+offset_bottom = 13.0
+script = ExtResource("1_jf0ek")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, 6)
+texture = ExtResource("1_xyru4")
+hframes = 5

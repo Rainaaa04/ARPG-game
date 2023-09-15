@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://uh6rqpeg0kdm"]
+
+[sub_resource type="GDScript" id="GDScript_vs5wj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j34yj"]
+resource_local_to_scene = true
+
+[node name="Collectable" type="Area2D"]
+script = SubResource("GDScript_vs5wj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_j34yj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
